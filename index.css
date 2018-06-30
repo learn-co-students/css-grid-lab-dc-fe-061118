@@ -5,6 +5,9 @@ body {
 }
 
 .grid-container {
+  display: grid;
+  grid-template:1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 50px;
   height: 100vh;
   width: 100vw;
 }
@@ -12,4 +15,11 @@ body {
 .grid-item {
   background-color: grey;
   border: 1px solid black;
+}
+
+.bigItem {
+  grid-area: 2/2/4/4;
+  height: 50%;
+  width: 50%;
+  justify-self: center;
 }
